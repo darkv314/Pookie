@@ -21,10 +21,10 @@
 }
 
 .gay_class p {
-  font-size: 50px;
+  font-size: 15px;
   text-align: center;
   animation-name: move-and-scale;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 
