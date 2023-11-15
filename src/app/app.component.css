@@ -1,0 +1,50 @@
+.gay_button {
+  background-color: rgb(117, 54, 160);
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.gay_class {
+  font-size: large;
+  background-color: rgb(167, 76, 90);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 100vh;
+  width: 100vw;
+}
+
+.gay_class p {
+  font-size: 50px;
+  text-align: center;
+  animation-name: move-and-scale;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.gay_container {
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+@keyframes move-and-scale {
+  0% {
+    display: none;
+    opacity: 0;
+    transform: translateY(100%) scale(0.5); /* Move the text to the right and make it half size */
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    transform: translateX(0%) scale(1); /* Move the text to the center and make it normal size */
+  }
+}
